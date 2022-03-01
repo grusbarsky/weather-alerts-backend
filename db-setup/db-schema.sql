@@ -11,7 +11,7 @@ CREATE TABLE Users (
 CREATE TABLE Articles (
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
-    article_url TEXT NOT NULL,
+    article_url TEXT NOT NULL UNIQUE,
     image_url TEXT NOT NULL,
     date_published TEXT,
     source_name TEXT,
